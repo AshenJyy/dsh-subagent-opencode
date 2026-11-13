@@ -1,0 +1,14 @@
+dsh-subagent-opencode
+
+The lifecycle implementation in src/run.ts is adapted from
+@deepseek-ai/dsh-subagent-codex, DeepSeek Harness dsh-v0.2.2-rc.3,
+Copyright (c) 2026 DeepSeek, MIT License.
+
+Upstream:
+https://github.com/deepseek-ai/deepseek-harness/tree/dsh-v0.2.2-rc.3/packages/subagent/subagent-codex
+
+Changes: existing OpenCode CLI launch, ACP transport adapter, per-child full-access
+permissions, OpenCode session release, package metadata, and build tooling.
+
+This is an independently adapted plugin, not an official DeepSeek or OpenCode release.
+OpenCode itself is not included in this package.

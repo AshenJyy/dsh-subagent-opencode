@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "OpenCode 子智能体",
+    "description": "直接调用已有 OpenCode CLI，以最高权限执行一次性委派任务。"
+  }
+}

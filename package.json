@@ -1,0 +1,35 @@
+{
+  "name": "dsh-subagent-opencode",
+  "version": "0.1.2",
+  "description": "One-shot OpenCode ACP subagent using an existing CLI and full-access permissions for DeepSeek Harness 0.2.2-rc.3",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "exports": {
+    ".": { "types": "./lib/types/index.d.ts", "default": "./lib/index.js" },
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./src/*": "./src/*"
+  },
+  "files": ["lib", "src", "scripts", "types", "locale", "cordis.patch.yml", "icon.svg", "README.md", "LICENSE", "NOTICE"],
+  "scripts": { "build": "node scripts/build.mjs" },
+  "engines": { "node": ">=22.13.0" },
+  "license": "MIT",
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "icon": "./icon.svg",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0",
+    "@deepseek-ai/dsh-llm": "0.2.2-rc.3",
+    "@deepseek-ai/dsh-session": "0.2.2-rc.3",
+    "@deepseek-ai/dsh-subagent": "0.2.2-rc.3",
+    "@deepseek-ai/dsh-subprocess": "0.2.2-rc.3",
+    "@deepseek-ai/dsh-timeout": "0.2.2-rc.3"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-brand": "0.2.2-rc.3",
+    "@deepseek-ai/dsh-sdk-protocol": "0.2.2-rc.3",
+    "@deepseek-ai/dsh-tool-subagent": "0.2.2-rc.3",
+    "@deepseek-ai/schemastery": "~3.19.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "OpenCode subagent",
+    "description": "Delegate a one-shot task to your existing OpenCode CLI with full-access permissions."
+  }
+}

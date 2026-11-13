@@ -1,0 +1,13 @@
+- insert:
+    - id: subagent-opencode
+      name: dsh-subagent-opencode
+      config:
+        command: 'E:\nodejs\node_global\node_modules\@opencode\cli\bin\opencode.exe'
+        agent: build
+        permissionMode: full-access
+    - id: tool-subagent-opencode
+      name: '@deepseek-ai/dsh-tool-subagent'
+      config:
+        provider: opencode
+        toolName: subagent_opencode
+        maxDepth: provider-managed
